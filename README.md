@@ -1,6 +1,6 @@
-# AGENT Rules · AI 编码代理通用规则集
+# AGENTS Rules · AI 编码代理通用规则集
 
-适用于 [pi](https://github.com/earendil-works/pi-coding-agent) 等 AI 编码代理的行为规则文件（`AGENT.md`），让代理在读写文件、执行命令、提交代码时有统一的安全边界和工作习惯。
+适用于 [pi](https://github.com/earendil-works/pi-coding-agent) 等 AI 编码代理的行为规则文件（`AGENTS.md`），让代理在读写文件、执行命令、提交代码时有统一的安全边界和工作习惯。
 
 ## 规则内容
 
@@ -17,11 +17,11 @@
 
 ## 使用方式
 
-把 `AGENT.md` 复制到代理的配置目录即可生效：
+把 `AGENTS.md` 复制到代理的配置目录即可生效：
 
 ```bash
-# pi coding agent
-cp AGENT.md ~/.pi/AGENT.md
+# pi coding agent（全局指令文件固定为 ~/.pi/agent/AGENTS.md）
+cp AGENTS.md ~/.pi/agent/AGENTS.md
 ```
 
 其他代理工具（如 Claude Code 的 `CLAUDE.md`、Cursor 的规则文件）也可参考其中的规则条目自行裁剪。
